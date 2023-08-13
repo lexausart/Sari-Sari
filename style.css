@@ -1699,6 +1699,7 @@ i {
         display: flex;
         justify-content: space-around;
         padding: 20px 0;
+        padding-left: 60px;
     }
 
     .hdn-table h3 {
