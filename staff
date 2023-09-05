@@ -90,71 +90,53 @@
 
         </div>
     </header>
-    <section class="sec-1">
-        <div class="container">
 
-            <!-- Slider -->
-
-            <div class="slider">
-                <div class="image-box">
-                    <div class="slide">
-                        <img src="images/si1.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si4.jpg" alt="">
-                    </div>
+    <!-- Staff -->
+    <div class="product-comp">
+        <div style="background:white; margin:auto; padding:50px 50px;">
+            <h3>Food</h3>
+            <div class="box-a">
+                <div>
+                    <img class="item" src="https://imgur.com/xiWLhdq.gif" alt="">
+                    <span>Tang Moon</span>
+                    <p>Tang mooooon</p>
                 </div>
-            </div>
-            <div class="container-1">
-
-                <!-- NFT banner-->
-                <div class="para">
-                    <p>Are you interested in Namazu Festival Tokens?</p><a href="https://nft.lexa.us">Click
-                        here to learn more!</a>
+                <div>
+                    <img class="item" src="https://i.imgur.com/aYTTuBa.gif" alt="">
+                    <span>Frozen Pizza</span>
                 </div>
-
-                <!-- Start of flex tables-->
-                <div class="product-comp">
-                    <div class="box box-c">
-                        <h3>Shop All</h3>
-                        <a href="https://sari.lexa.us/shop">
-                            <div>
-                                <img src="https://imgur.com/UbAlalC.gif" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box box-c">
-                        <h3>Multi-level Magicking</h3>
-                        <div>
-                            <img src="images/amazon basics.jpg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="box box-c">
-                        <h3>Our Staff</h3>
-                        <a href="https://sari.lexa.us/staff" <div>
-                            <img src="https://imgur.com/tIZiDWw.gif" alt="">
-                    </div>
-                    </a>
+                <div>
+                    <img class="item" src="https://imgur.com/u8finBN.gif" alt="">
+                    <span>Assorted Candies</span>
                 </div>
-                <div class="box-b">
-                    <div class="best">
-                        <h3>Sign up for the Best Experience</h3>
-                        <button>Sign in securely</button>
-                    </div>
-                    <div>
-                        <img src="images/banner.jpg" alt="">
-                    </div>
+                <div>
+                    <img src="images/ga4.jpg" alt="">
+                    <span>Gum</span>
+                </div>
+                <div>
+                    <img src="images/ga1.jpg" alt="">
+                    <span>Chips</span>
+                </div>
+                <div>
+                    <img src="images/ga2.jpg" alt="">
+                    <span>Donuts</span>
+                </div>
+                <div>
+                    <img src="images/ga3.jpg" alt="">
+                    <span>Siopao Steamed Buns</span>
+                </div>
+                <div>
+                    <img src="images/ga4.jpg" alt="">
+                    <span>Can of Beans (not expired)</span>
+                </div>
+                <div>
+                    <img src="images/ga4.jpg" alt="">
+                    <span>Assorted Fruit</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
 
 
     <!-- Footer -->
