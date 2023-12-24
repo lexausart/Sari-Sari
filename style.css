@@ -870,17 +870,17 @@ i {
 }
 
 .badge {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
     color: white;
     font-weight: 600;
     border: none;
-    width: 200px;
+    width: 225px;
     height: 0px;
-    border-right: 29px solid transparent;
-    border-top: 29px solid #C45500;
-    border-left: 29px solid #C45500;
-    border-bottom: 29px solid #C45500;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 20px solid;
+    border-top: 20px solid #C45500;
+    border-left: 20px solid #C45500;
+    border-bottom: 20px solid #C45500;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -1754,17 +1754,17 @@ i {
 
     /*test*/
     .badge {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
         color: white;
         font-weight: 600;
         border: none;
-        width: 200px;
+        width: 225px;
         height: 0px;
-        border-right: 29px solid transparent;
-        border-top: 29px solid #C45500;
-        border-left: 29px solid #C45500;
-        border-bottom: 29px solid #C45500;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-right: 20px solid;
+        border-top: 20px solid #C45500;
+        border-left: 20px solid #C45500;
+        border-bottom: 20px solid #C45500;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
