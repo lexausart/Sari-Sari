@@ -885,6 +885,7 @@ i {
 }
 
 .blue-badge {
+    display: initial;
     color: white;
     font-weight: 600;
     border: none;
@@ -898,6 +899,7 @@ i {
 
 
 .blue-badge-orange {
+    display: initial;
     color: #F69931;
     font-weight: 600;
     border: none;
