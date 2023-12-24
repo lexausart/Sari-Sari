@@ -440,7 +440,7 @@ i {
     display: flex;
     box-sizing: border-box;
     margin: 20px 0;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 .product-comp .box {
@@ -1313,7 +1313,7 @@ i {
         flex-wrap: wrap;
         box-sizing: border-box;
         margin: 20px 0;
-        justify-content: space-around;
+        /*  justify-content: space-around; */
         margin-bottom: 100px;
     }
 
