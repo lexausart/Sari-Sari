@@ -869,23 +869,35 @@ i {
     height: 100%;
 }
 
-/*test comment*/
 .badge {
     color: white;
     font-weight: 600;
     border: none;
-    width: 225px;
+    width: 200px;
     height: 0px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-right: 20px solid;
-    border-top: 20px solid #C45500;
     border-left: 20px solid #C45500;
     border-bottom: 20px solid #C45500;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
+.blue-badge {
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 200px;
+    height: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 20px solid;
+    border-left: 20px solid #232F3E;
+    border-bottom: 20px solid #232F3E;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 
 
 /*MOBILE 800px*/
@@ -1753,22 +1765,33 @@ i {
         height: 100%;
     }
 
-    /*test*/
     .badge {
         color: white;
         font-weight: 600;
         border: none;
-        width: 225px;
+        width: 200px;
         height: 0px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-right: 20px solid;
-        border-top: 20px solid #C45500;
         border-left: 20px solid #C45500;
         border-bottom: 20px solid #C45500;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-}
 
-/*test comment*/
+    .blue-badge {
+        color: white;
+        font-weight: 600;
+        border: none;
+        width: 200px;
+        height: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-right: 20px solid;
+        border-left: 20px solid #232F3E;
+        border-bottom: 20px solid #232F3E;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
