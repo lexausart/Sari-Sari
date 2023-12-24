@@ -876,7 +876,7 @@ i {
 
 .wordart {
     font-family: Arial, sans-serif;
-    font-size: 4em;
+    font-size: 18px;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -1773,7 +1773,7 @@ i {
 
     .wordart {
         font-family: Arial, sans-serif;
-        font-size: 4em;
+        font-size: 18px;
         font-weight: bold;
         position: relative;
         z-index: 1;
