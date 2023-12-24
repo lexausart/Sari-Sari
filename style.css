@@ -872,10 +872,10 @@ i {
 
 .badge {
     border-radius: 8px;
-    width: 100px;
+    width: 175px;
     background-color: #C45500;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     border: none;
 }
 
@@ -1748,11 +1748,10 @@ i {
 
     .badge {
         border-radius: 8px;
-        width: 100px;
+        width: 175px;
         background-color: #C45500;
         color: white;
-        font-weight: 400;
+        font-weight: 600;
         border: none;
     }
-
 }
