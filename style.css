@@ -870,58 +870,12 @@ i {
     height: 100%;
 }
 
-.a-addon-badge:after,
-.a-icon-addon:after {
-    top: 0;
-    border-style: dashed;
-    border-width: 6px;
-    border-color: rgba(255, 255, 255, 0);
-    border-top: 6px solid #3F6998;
-    border-bottom-width: 0;
-    width: 0;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    border-top-width: 10px
-}
-
-.a-addon-badge:before,
-.a-icon-addon:before {
-    bottom: 0;
-    border-style: dashed;
-    border-width: 6px;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom: 6px solid #3F6998;
-    border-top-width: 0;
-    width: 0;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    border-bottom-width: 10px;
-}
-
-.p13n-best-seller-badge {
-    margin-right: 4px;
-    background-color: #E47911 !important;
-    font-size: 12px;
-    padding-top: 2px;
-    padding-bottom: 2px
-}
-
-.p13n-best-seller-badge.p13n-typeramp-t1-badge {
-    vertical-align: text-top
-}
-
-.p13n-best-seller-badge:before {
-    border-bottom-color: #E47911 !important
-}
-
-.p13n-best-seller-badge:after {
-    border-top-color: #E47911 !important
+.badge {
+    border-radius: 8px;
+    width: 250px;
+    background-color: #C45500;
+    color: white;
+    font-weight: 400;
 }
 
 
@@ -1791,58 +1745,12 @@ i {
         height: 100%;
     }
 
-    .a-addon-badge:after,
-    .a-icon-addon:after {
-        top: 0;
-        border-style: dashed;
-        border-width: 6px;
-        border-color: rgba(255, 255, 255, 0);
-        border-top: 6px solid #3F6998;
-        border-bottom-width: 0;
-        width: 0;
-        height: 0;
-        font-size: 0;
-        line-height: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        border-top-width: 10px
-    }
-
-    .a-addon-badge:before,
-    .a-icon-addon:before {
-        bottom: 0;
-        border-style: dashed;
-        border-width: 6px;
-        border-color: rgba(255, 255, 255, 0);
-        border-bottom: 6px solid #3F6998;
-        border-top-width: 0;
-        width: 0;
-        height: 0;
-        font-size: 0;
-        line-height: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        border-bottom-width: 10px;
-    }
-
-    .p13n-best-seller-badge {
-        margin-right: 4px;
-        background-color: #E47911 !important;
-        font-size: 12px;
-        padding-top: 2px;
-        padding-bottom: 2px
-    }
-
-    .p13n-best-seller-badge.p13n-typeramp-t1-badge {
-        vertical-align: text-top
-    }
-
-    .p13n-best-seller-badge:before {
-        border-bottom-color: #E47911 !important
-    }
-
-    .p13n-best-seller-badge:after {
-        border-top-color: #E47911 !important
+    .badge {
+        border-radius: 8px;
+        width: 250px;
+        background-color: #C45500;
+        color: white;
+        font-weight: 400;
     }
 
 }
