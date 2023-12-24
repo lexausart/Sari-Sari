@@ -885,7 +885,8 @@ i {
 }
 
 .blue-badge {
-    display: initial;
+    display: initial !important;
+    margin: 0px !important;
     color: white;
     font-weight: 600;
     border: none;
@@ -899,7 +900,8 @@ i {
 
 
 .blue-badge-orange {
-    display: initial;
+    display: initial !important;
+    margin: 0px !important;
     color: #F69931;
     font-weight: 600;
     border: none;
@@ -1792,6 +1794,8 @@ i {
     }
 
     .blue-badge {
+        display: initial !important;
+        margin: 0px !important;
         color: white;
         font-weight: 600;
         border: none;
@@ -1804,6 +1808,8 @@ i {
     }
 
     .blue-badge-orange {
+        display: initial !important;
+        margin: 0px !important;
         color: #F69931;
         font-weight: 600;
         border: none;
