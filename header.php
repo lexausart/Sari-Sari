@@ -79,7 +79,7 @@
             <!-- Menu address-->
             <div class="second-2">
                 <p>
-                    <span>Mist Ward 7 Apt 55</span>
+                    <span>Mist Ward 7 Apt 55 test</span>
                 </p>
             </div>
 
