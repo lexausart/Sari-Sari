@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -919,7 +918,6 @@ i {
 @media only screen and (max-device-width: 950px) {
     * {
         margin: auto;
-        padding: 0;
         text-decoration: none;
         box-sizing: border-box;
     }
