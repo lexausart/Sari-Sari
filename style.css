@@ -1779,14 +1779,15 @@ i {
     }
 
     .badge {
+        display: initial !important;
+        margin: 0px !important;
         color: white;
         font-weight: 600;
         border: none;
+        background: #C45500;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        border-right: 20px solid;
         border-left: 20px solid #C45500;
-        border-bottom: 20px solid #C45500;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
