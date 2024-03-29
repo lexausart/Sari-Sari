@@ -476,6 +476,7 @@ i {
 
 .box-a div {
     display: inline-block;
+    margin: 20px;
 }
 
 .box-a div span {
