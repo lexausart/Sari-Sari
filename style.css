@@ -17,6 +17,10 @@ a {
     color: #007185;
 }
 
+ol {
+    list-style: disc;
+}
+
 .home {
     margin: 20px;
 }
@@ -939,6 +943,10 @@ i {
 
     a {
         color: #007185;
+    }
+
+    ol {
+        list-style: disc;
     }
 
     .home {
