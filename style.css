@@ -17,6 +17,10 @@ a {
     color: #007185;
 }
 
+.home {
+    margin: 20px;
+}
+
 .item {
     width: 150px;
     height: 150px;
@@ -935,6 +939,10 @@ i {
 
     a {
         color: #007185;
+    }
+
+    .home {
+        margin: 20px;
     }
 
     .first {
