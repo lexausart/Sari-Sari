@@ -13,6 +13,10 @@ body {
     background-color: #eaeded;
 }
 
+a {
+    color: #007185;
+}
+
 .item {
     width: 150px;
     height: 150px;
@@ -927,6 +931,10 @@ i {
         box-sizing: border-box;
         background-color: #eaeded;
         align-items: center;
+    }
+
+    a {
+        color: #007185;
     }
 
     .first {
