@@ -923,6 +923,26 @@ i {
     padding: 10px;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    margin: auto;
+    width: 100%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #232F3E;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(70, 70, 70);
+}
 
 /*MOBILE 800px*/
 
@@ -1834,5 +1854,26 @@ i {
         border-right: 20px solid #232F3E;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        margin: auto;
+        width: 100%;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #232F3E;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(70, 70, 70);
     }
 }
