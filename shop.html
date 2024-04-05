@@ -79,7 +79,7 @@
     <div class="product-comp">
         <div style="background:white; margin:auto; padding:50px 50px; width:100%">
             <span><a href="https://sari.lexa.us">Sari-Sari Store</a> > Shop</span>
-            <h2>Menu</h2>
+            <h2>Menutest</h2>
             <div class="box-a">
                 <div class="menu"><a href="#food">Food</a></div>
                 <div class="menu"><a href="#sandwich-bar">Sandwich Bar</a></div>
@@ -446,6 +446,27 @@
     </div>
 
     <script src="app.js"></script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
