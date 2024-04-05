@@ -919,15 +919,6 @@ i {
     border-bottom-right-radius: 10px;
 }
 
-.flex-menu {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    background-color: #f1f1f1;
-    padding: 10px;
-    flex: 50%;
-}
-
 .menu {
     padding: 10px;
 }
@@ -1844,8 +1835,4 @@ i {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-}
-
-.flex-menu {
-    flex-direction: column;
 }
