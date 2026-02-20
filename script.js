@@ -371,7 +371,10 @@
         "Someone storms out of the shop just as you arrive.",
         "Brynley is running a 'totally legal' side business.",
         "A shelf collapses at the exact moment you look at it.",
-        "R'tehz is still judging you."
+        "R'tehz is still judging you.",
+        "Someone's banking information is still on the computer!",
+        "Did someone just walk out of the bathroom without washing their hands?",
+        "Brynley is quoting questionable brain-rot."
     ];
 
     btn.addEventListener("click", () => {
@@ -1284,3 +1287,4 @@
     }
   });
 })();
+
