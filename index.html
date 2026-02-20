@@ -1,184 +1,519 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
 
-<!-- Head-->
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sari.lexa.us" />
     <meta property="og:title" content="Sari-Sari Store" />
     <meta property="og:description" content="Your favorite convenience store,  konbini, or bodega!" />
     <meta property="og:image" content="https://imgur.com/H7oJWvd.gif" />
-    <meta charset="UTF-8">
-    <meta name="twitter:card" content="summary">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Sari-Sari Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sari-Sari Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
+<!-- Header -->
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <header>
-        <div class="first">
+  <header class="topbar" role="banner">
+    <div class="topbar__row">
+      <a class="brand" href="/index.html" aria-label="Tangazon home">
+        <span class="brand__logo">sari-sari store</span>
+        <span class="brand__tag">.ph? maybe</span>
+      </a>
 
-            <!-- Logo-->
-            <div class="flex logo">
-                <a href="https://sari.lexa.us"><img src="images/logo3.png" alt=""></a>
+      <a class="cart" href="#" aria-label="Cart">
+        <span class="cart__count" aria-hidden="true">0</span>
+        🧺 <strong>Cart</strong>
+      </a>
 
-            </div>
+      <button class="pill location" type="button" aria-label="Deliver to">
+        <strong>Coeurl</strong> Goblet Ward 22 Plot 25
+      </button>
 
+      <form class="search" role="search" aria-label="Product search">
+        <label class="sr-only" for="q">Search Tangazon</label>
+        <select class="search__select" aria-label="Department">
+          <option>All</option>
+          <option>Snacks</option>
+          <option>Drinks</option>
+          <option>Household</option>
+          <option>Gacha & Trinkets</option>
+          <option>“Not Cursed”</option>
+        </select>
+        <input id="q" class="search__input" placeholder="Search: chicharron, calamansi, aether batteries…" />
+        <button class="search__btn" type="submit" aria-label="Search">🔎</button>
+      </form>
 
-            <!-- Account part 2-->
-            <a href="https://discord.gg/4T2kTz2ckp">
-                <div class="flex right">
-                    <div class="sign">
-                        <span>Join our</span>
-                        <div class="flex ac">
-                            <span>Discord</span>
-                            <i class="fas fa-caret-down"></i>
-                        </div>
-            </a>
-        </div>
-
-        <!-- Cart-->
-        <div class="flex cart">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="ca">Cart</span>
-        </div>
-        </div>
-        </div>
-        <div class="second">
-            <div class="second-1">
-
-                <!-- Main menu-->
-                <div>
-                    <i class="fas fa-map-marker"></i>
-                    <span>Coeurl</span>
-                </div>
-            </div>
-
-            <!-- NEW Menu address-->
-            <div class="second-2">
-                <p>
-                    <span>Goblet Ward 22 Plot 25</span>
-                </p>
-            </div>
-
-        </div>
-    </header>
-
-
-    <section class="sec-1">
-        <div class="container">
-
-            <!-- Slider -->
-
-            <div class="slider">
-                <div class="image-box">
-                    <div class="slide">
-                        <img src="images/si1.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/si4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="container-1">
-
-                <!-- NFT banner-->
-                <div class="para">
-                    <p>Are you interested in Namazu Festival Tokens?</p><a href="https://tang.lexa.us">Click
-                        here to learn more!</a>
-                </div>
-
-                <!-- Start of flex tables-->
-                <div class="product-comp">
-                    <div class="box box-c">
-                        <h3>Shop All</h3>
-                        <a href="https://sari.lexa.us/shop">
-                            <div>
-                                <img src="https://imgur.com/UbAlalC.gif" alt="">
-                                <p class="home">Buy our stuff</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box box-c">
-                        <h3>Tarot Fortune Forecasting</h3>
-                        <a href="https://sari.lexa.us/fortune">
-                            <div>
-                                <img src="https://imgur.com/m2V1J9B.gif" alt="">
-                                <p class="home">See the future</p>
-                            </div>
-                        </a>
-                    </div>
-                    </a>
-                    <div class="box box-c">
-                        <h3>Hooks and Primal Shipping</h3>
-                        <a href="https://sari.lexa.us/hooks">
-                            <div>
-                                <img src="https://imgur.com/H7oJWvd.gif" alt="">
-                                <p class="home">Get hooked on deals</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box box-c">
-                        <h3>Our Staff</h3>
-                        <a href="https://sari.lexa.us/staff">
-                            <div>
-                                <img src="https://imgur.com/tIZiDWw.gif" alt="">
-                                <p class="home">Meet our staff</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <section class="footer">
-        <div class="backtop">
-
-        </div>
-        <div class="detail">
-            <div class="table">
-                <div>
-                    <div class="t-head">Shop Today</div>
-                    <ul>
-                        <li><em>New Location!</em></li>
-                        <li>Coeurl - Goblet</li>
-                        <li>Ward 22 Plot 25</li>
-                        <li>Goblet East Aetheryte</li>
-                        <li>Fridays 9PMEST to 11PMEST</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="copy">
-            <span>&copy; Designed by Swapnil Aichbhaumik</span>
-            <span>and Sanzang Sun/Tang Moon</span>
-        </div>
-    </section>
+      <nav class="account" aria-label="Account links">
+        <a class="account__item" href="https://discord.gg/4T2kTz2ckp">
+          <span class="small">Hello, traveler</span>
+          <strong>Join our Discord</strong>
+        </a>
+        <a class="account__item" href="#">
+          <span class="small">Fridays</span>
+          <strong>9PM - 11PM EST</strong>
+        </a>
+      </nav>
     </div>
 
-    <script src="app.js"></script>
+    <div class="topbar__strip" role="navigation" aria-label="Categories">
+
+      <!-- Optional quick links that stay visible -->
+      <a class="stripLink" href="/about.html">About</a>
+      <a class="stripLink" href="/staff.html">Staff</a>
+      <a class="stripLink" href="/hooks.html">Hooks (maybe)</a>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Promotional banner">
+    <div class="hero__inner">
+      <h1>Welcome to the Sari-Sari Store!11!</h1>
+      <p>
+        Your favorite convenience store, konbini, or bodega that delivers <em>convenience</em>, minor chaos, and
+        occasionally
+        a polite spirit offering.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" id="notSuspiciousBtn" href="#">Shop “Not Suspicious” Deals</a>
+        <a class="btn btn--ghost" id="trackOrderBtn" href="#">Track an Order (why)</a>
+      </div>
+      <p class="hero__fineprint">*Primal shipping: arrives between “soon” and “after the next sidequest.”</p>
+    </div>
+  </section>
+
+  <main class="layout" role="main">
+    <!-- Mobile: drawer. Desktop: sidebar. -->
+    <details class="filtersShell" aria-label="Filters">
+      <summary class="filtersShell__summary btn btn--ghost">🔧 Filters</summary>
+
+      <aside class="filters" aria-label="Filter options">
+        <h2 class="filters__title">Refine by</h2>
+
+        <section class="filter">
+          <h3 class="filter__heading">Department</h3>
+          <label class="check"><input type="checkbox" data-filter="dept" value="snacks" /> Snacks</label>
+          <label class="check"><input type="checkbox" data-filter="dept" value="drinks" /> Drinks</label>
+          <label class="check"><input type="checkbox" data-filter="dept" value="household" /> Household</label>
+          <label class="check"><input type="checkbox" data-filter="dept" value="trinkets" /> Charms & Trinkets</label>
+          <label class="check"><input type="checkbox" data-filter="dept" value="notcursed" /> “Not Cursed”</label>
+        </section>
+
+        <section class="filter">
+          <h3 class="filter__heading">Delivery</h3>
+          <label class="check"><input type="checkbox" data-filter="flag" value="primal" /> Primal eligible</label>
+          <label class="check"><input type="checkbox" data-filter="flag" value="sameday" /> Same-day (if Euclid
+            runs)</label>
+        </section>
+
+        <section class="filter">
+          <h3 class="filter__heading">Rating</h3>
+          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="4" /> 4★ & up</label>
+          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="3" /> 3★ & up</label>
+          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="0" checked />
+            Any</label>
+        </section>
+
+        <section class="filter">
+          <h3 class="filter__heading">Price</h3>
+          <div class="price">
+            <input class="price__input" id="minPrice" placeholder="₱ min" inputmode="numeric" />
+            <span>—</span>
+            <input class="price__input" id="maxPrice" placeholder="₱ max" inputmode="numeric" />
+          </div>
+          <button class="btn btn--small" type="button" id="applyPrice">Apply</button>
+          <button class="btn btn--small btn--ghost" type="button" id="clearFilters">Clear</button>
+        </section>
+
+        <section class="filter">
+          <h3 class="filter__heading">Special</h3>
+          <label class="check"><input type="checkbox" data-filter="flag" value="blessing" /> Blessing included</label>
+          <label class="check"><input type="checkbox" data-filter="flag" value="r-tehz" /> R'tehz-tested</label>
+          <label class="check"><input type="checkbox" data-filter="flag" value="tito" /> Tito-approved (danger)</label>
+        </section>
+
+        <p class="filters__hint">Tip: “Primal” increases plot by 23%.</p>
+      </aside>
+    </details>
+
+    <section class="results" aria-label="Results">
+      <div class="results__bar">
+        <div class="results__count" aria-live="polite">
+          <strong id="countShown">0</strong> results for <em id="queryLabel">“”</em>
+        </div>
+
+        <div class="sort">
+          <label class="sr-only" for="sort">Sort</label>
+          <select id="sort">
+            <option value="featured">Sort by: Featured</option>
+            <option value="priceAsc">Price: Low to High</option>
+            <option value="priceDesc">Price: High to Low</option>
+            <option value="ratingDesc">Avg. Customer Chaos</option>
+            <option value="newest">Newest Arrivals</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" aria-label="Product grid">
+
+        <!-- Fried Chicken -->
+        <article class="card" data-dept="snacks" data-tags="fried chicken" data-flags="sameday"
+          data-price="100" data-rating="3.8" data-reviews="2422" data-date="2026-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://i.imgur.com/iY4Y5YU.gif"></div>
+          <h3 class="card__title">Fried Chicken</h3>
+          <p class="card__meta">Ships from: kitchen • “The chicken is joyful!”</p>
+          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(2,422)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Crunchy jolly chimkin.</p>
+        </article>
+
+        <!-- Chicharron -->
+        <article class="card" data-dept="snacks" data-tags="chicharron pork crunchy sacred snack"
+          data-flags="primal blessing" data-price="79" data-rating="4.0" data-reviews="2401" data-date="2026-02-10">
+          <div class="card__img" aria-hidden="true">🥟</div>
+          <h3 class="card__title">Chicharron (Sacred Crunch)</h3>
+          <p class="card__meta">Ships from: Tang’s Counter • Condition: dangerously crispy</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(2,401)</span></div>
+          <div class="card__price"><span class="currency">₱</span>79 <span class="card__prime">Primal</span></div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Warning: may attract friendly spirits.</p>
+        </article>
+
+        <!-- Peter's Chocobo Head -->
+        <article class="card" data-dept="trinkets" data-tags="Peter's Chocobo Head" data-flags=""
+          data-price="5000" data-rating="5" data-reviews="5" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/5GTCcpO.gif"></div>
+          <h3 class="card__title">Peter's Chocobo Head</h3>
+          <p class="card__meta">Ships from: Tural • “You all matter!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(5)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5000</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Might be a parasite.</p>
+        </article>
+
+        <!-- Calamansi Concentrate -->
+        <article class="card" data-dept="drinks" data-tags="calamansi citrus sour concentrate drink" data-flags=""
+          data-price="55" data-rating="5.0" data-reviews="803" data-date="2026-02-14">
+          <div class="card__img" aria-hidden="true">🍋</div>
+          <h3 class="card__title">Calamansi Concentrate</h3>
+          <p class="card__meta">Ships from: Sunny’s stash • “for health”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(803)</span></div>
+          <div class="card__price"><span class="currency">₱</span>55</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Sour enough to reset your life choices.</p>
+        </article>
+
+        <!-- Tito Whiskey juice -->
+        <article class="card" data-dept="drinks" data-tags="tito whiskey juice bottle questionable wisdom"
+          data-flags="tito" data-price="120" data-rating="3.0" data-reviews="666" data-date="2026-01-30">
+          <div class="card__img" aria-hidden="true">🧃</div>
+          <h3 class="card__title">Tito Whiskey’s “Juice”</h3>
+          <p class="card__meta">Ships from: Definitely not Tito • trust?</p>
+          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(666)</span></div>
+          <div class="card__price"><span class="currency">₱</span>120</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">May contain wisdom. May contain lies.</p>
+        </article>
+
+        <!-- Aether batteries -->
+        <article class="card" data-dept="household" data-tags="aether batteries euclid engineering power"
+          data-flags="primal r-tehz" data-price="349" data-rating="4.0" data-reviews="1112" data-date="2026-02-01">
+          <div class="card__img" aria-hidden="true">🔋</div>
+          <h3 class="card__title">Aether Batteries (Euclid Edition)</h3>
+          <p class="card__meta">Ships from: Workshop • “I calibrated them.”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(1,112)</span></div>
+          <div class="card__price"><span class="currency">₱</span>349 <span class="card__prime">Primal</span></div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">If it hums, that’s normal. Probably.</p>
+        </article>
+
+        <!-- Anti-Aswang Soap -->
+        <article class="card" data-dept="household" data-tags="soap anti aswang protection hygiene"
+          data-flags="blessing" data-price="38" data-rating="4.0" data-reviews="512" data-date="2026-01-22">
+          <div class="card__img" aria-hidden="true">🧼</div>
+          <h3 class="card__title">Bar Soap (Anti-Aswang Scent)</h3>
+          <p class="card__meta">Ships from: Xuanzang Star • stolen fair & square</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(512)</span></div>
+          <div class="card__price"><span class="currency">₱</span>38</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Smells like safety and mild intimidation.</p>
+        </article>
+
+        <!-- Gremlin Plush -->
+        <article class="card" data-dept="trinkets" data-tags="plush gremlin gift" data-flags="sameday"
+          data-price="499" data-rating="5.0" data-reviews="9001" data-date="2026-02-15">
+          <div class="card__img" aria-hidden="true">🧸</div>
+          <h3 class="card__title">Gremlin Plush (Set of 2)</h3>
+          <p class="card__meta">Ships from: Brynley • “I packed it!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(9,001)</span></div>
+          <div class="card__price"><span class="currency">₱</span>499</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Some assembly required (emotional).</p>
+        </article>
+
+        <!-- Kiba's Toilet Plunger -->
+<article class="card" data-dept="household" data-tags="Kiba's Toilet Plunger" data-flags=""
+          data-price="1200" data-rating="4" data-reviews="253" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/KWLcAq4.gif"></div>
+          <h3 class="card__title">Kiba's Toilet Plunger</h3>
+          <p class="card__meta">Ships from: Kiba's bathroom • NOT stolen</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(253)</span></div>
+          <div class="card__price"><span class="currency">₱</span>1200</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">We <em>definitely</em> acquired Kiba's consent to sell this. (really)</p>
+        </article>
+
+         <!-- Balut -->
+        <article class="card" data-dept="snacks" data-tags="fried chicken" data-flags="sameday"
+          data-price="100" data-rating="5" data-reviews="9999" data-date="2026-02-19">
+          <div class="card__img" aria-hidden="true">🐣</div>
+          <h3 class="card__title">Balut</h3>
+          <p class="card__meta">Ships from: kitchen • “Ang sarap!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(9,999)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">this is WHAT</p>
+        </article>
+
+                 <!-- Costa del Seoul Sushi -->
+        <article class="card" data-dept="snacks" data-tags="costa del seoul sushi roll" data-flags=""
+          data-price="50" data-rating="2" data-reviews="13" data-date="2026-02-19">
+          <div class="card__img" aria-hidden="true">🍣</div>
+          <h3 class="card__title">Costa del Seoul Sushi Roll</h3>
+          <p class="card__meta">Ships from: Bryn's desk • “Very tropical...”</p>
+          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(13)</span></div>
+          <div class="card__price"><span class="currency">₱</span>50</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Beat the summer heat with a Costa del Seoul sushi roll!</p>
+        </article>
+
+                      <!-- Caterpillar Sushi -->
+        <article class="card" data-dept="snacks" data-tags="caterpillar sushi" data-flags=""
+          data-price="5" data-rating="1" data-reviews="2" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🐛</div>
+          <h3 class="card__title">Caterpillar Sushi</h3>
+          <p class="card__meta">Ships from: the dirt outside • “Eco-friendly!”</p>
+          <div class="card__rating" aria-label="Rating">★☆☆☆☆ <span>(2)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">This sushi is squishy!</p>
+        </article>
+
+        <!-- Ironworks Weapon Model Kit -->
+ <article class="card" data-dept="trinkets" data-tags="Ironworks Weapon Model Kit" data-flags="r-tehz"
+          data-price="9999999" data-rating="5" data-reviews="325" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🤖</div>
+          <h3 class="card__title">Ironworks Weapon Model Kit</h3>
+          <p class="card__meta">Ships from: R'tehz's closet • may or may not be stolen</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(325)</span></div>
+          <div class="card__price"><span class="currency">₱</span>9999999</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Factory-sealed.</p>
+        </article>
+
+        <!-- Frozen Pizza -->
+        <article class="card" data-dept="snacks" data-tags="frozen pizza" data-flags=""
+          data-price="15" data-rating="3" data-reviews="102" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img"  src="https://i.imgur.com/aYTTuBa.gif"></div>
+          <h3 class="card__title">Frozen Pizza</h3>
+          <p class="card__meta">Ships from: company chest- I mean freezer • “Star-friendly!”</p>
+          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(102)</span></div>
+          <div class="card__price"><span class="currency">₱</span>15</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Did you try heating it up?</p>
+        </article>
+
+<!-- Height Adjustable Lalafell Booster Seat-->
+   <article class="card" data-dept="household" data-tags="Height Adjustable Lalafell Booster Seat" data-flags=""
+          data-price="5124" data-rating="4" data-reviews="4353" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🪑</div>
+          <h3 class="card__title">Height Adjustable Lalafell Booster Seat</h3>
+          <p class="card__meta">Ships from: our warehouse • “How's the weather up there?”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(4353)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5124</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Guaranteed to help you reach the top shelf.</p>
+        </article>
+
+           <!-- Red Auroch Energy Drink -->
+        <article class="card" data-dept="drinks" data-tags="energy drink" data-flags="blessing primal"
+          data-price="3" data-rating="4" data-reviews="239" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/zG2GOCO.gif"></div>
+          <h3 class="card__title">Red Auroch Energy Drink</h3>
+          <p class="card__meta">Ships from: the void • “Gives you wings!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(239)</span></div>
+          <div class="card__price"><span class="currency">₱</span>3 <span class="card__prime">Primal</span></div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Guaranteed to keep you awake.</p>
+        </article>
+
+        <!-- Malboro Cigarettes -->
+                 <article class="card" data-dept="trinkets" data-tags="cigarettes" data-flags=""
+          data-price="50" data-rating="2" data-reviews="346" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/rCz9HGr.gif"></div>
+          <h3 class="card__title">Malboro Cigarettes</h3>
+          <p class="card__meta">Ships from: our front yard garden • stinky</p>
+          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(346)</span></div>
+          <div class="card__price"><span class="currency">₱</span>50</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Please use in moderation.</p>
+        </article>
+
+         <!-- BLANK        
+          
+         <article class="card" data-dept="snacks" data-tags="caterpillar sushi" data-flags=""
+          data-price="5" data-rating="2" data-reviews="2" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🐛</div>
+          <h3 class="card__title">Caterpillar Sushi</h3>
+          <p class="card__meta">Ships from: the dirt outside • “Star-friendly!”</p>
+          <div class="card__rating" aria-label="Rating">★☆☆☆☆ <span>(2)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">This sushi is squishy!</p>
+        </article>
+        
+      -->
+
+      <!-- Data-Dept Values -->
+       <!-- 
+      snacks
+      drinks
+      household
+      trinkets
+      notcursed
+       -->
+
+       <!-- Data-Flags -->
+       <!-- 
+      blessing
+      r-tehz
+      tito
+      primal
+      sameday
+       -->
+
+      </div>
+
+      <div class="noResults" id="noResults" hidden>
+        <strong>No results.</strong>
+        <div><small>Try fewer words, or accept the chaos.</small></div>
+      </div>
+
+      <footer class="footer">
+        <p>© Sari-Sari Store. Powered by vibes, duct tape, and sidequests.</p>
+      </footer>
+    </section>
+  </main>
+
+<!-- CART MODAL -->
+<div class="cartModal" id="cartModal" aria-hidden="true">
+  <div class="cartModal__overlay" data-cart-close></div>
+
+  <div class="cartModal__panel" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cartModal__header">
+      <h2>Your Cart</h2>
+      <button class="cartModal__close" type="button" data-cart-close aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cartModal__body">
+      <div id="cartItems"></div>
+
+      <div class="cartModal__empty" id="cartEmpty" hidden>
+        <p><strong>Your cart is emotionally empty.</strong></p>
+        <p class="muted">Tang suggests adding snacks. R'tehz suggests adding magitek. Brynley suggests adding violence.</p>
+      </div>
+    </div>
+
+    <div class="cartModal__footer">
+      <div class="cartModal__line">
+        <span>Subtotal</span>
+        <strong id="cartTotal">₱0</strong>
+      </div>
+      <div class="cartModal__line">
+        <span>Emotional Tax</span>
+        <strong id="cartEmotionalTax">₱0</strong>
+      </div>
+
+      <small class="cartModal__fineprint">
+        *Emotional Tax increases if you hesitate at checkout.
+      </small>
+
+      <div class="cartModal__actions">
+        <button class="btn btn--primary" type="button" id="checkoutBtn">
+          Proceed to Checkout (bravely)
+        </button>
+        <button class="btn btn--ghost" type="button" data-cart-close>
+          Fine. I’ll think about it.
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Event Modal -->
+  <div class="eventModal" id="eventModal" aria-hidden="true">
+  <div class="eventModal__overlay" data-event-close></div>
+
+  <div class="eventModal__panel" role="dialog" aria-modal="true" aria-label="Not Suspicious Deal Event">
+    <div class="eventModal__header">
+      <h2 id="eventTitle">Event</h2>
+      <button class="eventModal__close" type="button" data-event-close aria-label="Close">✕</button>
+    </div>
+
+    <div class="eventModal__body">
+      <div class="eventModal__badge" id="eventBadge" aria-hidden="true">✨</div>
+      <p class="eventModal__text" id="eventText"></p>
+      <div class="eventModal__fineprint" id="eventFineprint"></div>
+    </div>
+
+    <div class="eventModal__actions" id="eventActions">
+      <!-- Buttons injected by JS -->
+    </div>
+  </div>
+</div>
+
+  
+<div class="trackModal" id="trackModal" aria-hidden="true">
+  <div class="trackModal__overlay" data-track-close></div>
+
+  <div class="trackModal__panel" role="dialog" aria-modal="true" aria-label="Track an order">
+    <div class="trackModal__header">
+      <h2 id="trackTitle">Order Tracking</h2>
+      <button class="trackModal__close" type="button" data-track-close aria-label="Close tracking">✕</button>
+    </div>
+
+    <div class="trackModal__body">
+      <div class="trackModal__top">
+        <div class="trackModal__badge" id="trackBadge" aria-hidden="true">📦</div>
+        <div class="trackModal__summary">
+          <div class="trackModal__status" id="trackStatus">Locating your package…</div>
+          <div class="trackModal__meta" id="trackMeta">Order ID: <strong id="trackOrderId">TZ-????</strong></div>
+        </div>
+      </div>
+
+      <div class="trackModal__progress" aria-label="Tracking progress">
+        <div class="trackSteps" id="trackSteps">
+          <!-- steps injected -->
+        </div>
+      </div>
+
+      <div class="trackModal__detail" id="trackDetail"></div>
+
+      <div class="trackModal__fineprint" id="trackFineprint"></div>
+    </div>
+
+    <div class="trackModal__actions" id="trackActions">
+      <!-- buttons injected -->
+    </div>
+  </div>
+</div>
+
+  
 </body>
 
 </html>
