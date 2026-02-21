@@ -1,10 +1,4 @@
-/* styles.css
-   Tangazon — single consolidated stylesheet (shop + drawer + staff + about + hooks + random hook)
-*/
-
-/* =========================
-   Theme + Base
-========================= */
+/* Theme + Base */
 :root {
   --bg: #e9edf2;
   --panel: #fff;
@@ -839,7 +833,7 @@ a:hover {
     grid-template-columns: 280px 1fr;
   }*/
 
-  /* Filters become sticky sidebar; summary button hidden */
+  /* Filters become sticky sidebar, summary button hidden */
 
   .filtersShell[open] .filters {
     margin-top: 0;

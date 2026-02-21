@@ -406,7 +406,7 @@
   const taxEl = document.getElementById("cartEmotionalTax");
   const checkoutBtn = document.getElementById("checkoutBtn");
 
-  // If there is no grid on this page, we still want the cart modal/badge to work.
+  // If there is no grid on this page, makes cart modal/badge work
   const grid = document.querySelector(".grid");
 
   // --- Cart state ---
@@ -454,7 +454,7 @@
   }
 
   function ensureToast(message) {
-    // If you already have a toast() elsewhere, use it.
+    
     if (typeof window.toast === "function") return window.toast(message);
 
     // Minimal inline toast fallback
@@ -615,7 +615,7 @@
 
       modal.classList.add("is-open");
       modal.setAttribute("aria-hidden", "false");
-      document.body.classList.add("drawer-open"); // reuse your scroll-lock class
+      document.body.classList.add("drawer-open"); // reuse scroll-lock class
       renderCart();
 
       // focus close button
@@ -676,8 +676,9 @@
 })();
 
 
-// SCRIPT.JS
-// Paste this block near the bottom of script.js (works alongside your existing drawer + shop JS)
+
+
+// DEALS
 
 (() => {
   const btn = document.getElementById("notSuspiciousBtn");
@@ -776,7 +777,6 @@
     },
   ];
 
-  // Optional: use your existing toast if you already made one elsewhere.
   const toast = (msg) => {
     if (typeof window.toast === "function") return window.toast(msg);
 
@@ -855,7 +855,6 @@
 
     if (action === "moreTerms") {
       toast("You scroll. The terms scroll back. Respectfully.");
-      // tiny gag: append more fineprint
       fineEl.textContent = (ev.fine || "") + " • Clause 72: snacks are final.";
       return;
     }
@@ -911,7 +910,7 @@
     if (action === "continue") {
       if (ev.onContinueToast) toast(ev.onContinueToast);
       close();
-      // Go to deals (or replace with your real deals URL)
+      // Go to deals 
       goToDeals();
     }
   };
@@ -955,7 +954,7 @@
 
 
 
-// It is self-contained and won’t affect other pages if the button/modal aren’t present.
+// TRACKING
 
 (() => {
   const btn = document.getElementById("trackOrderBtn");
@@ -981,7 +980,7 @@
     return `TZ-${a}-${b}`;
   };
 
-  // Fake step templates; we’ll mark a random “current” index
+  // Fake step templates, marks a random “current” index
   const stepTemplates = [
     { label: "Order received", sub: "Tang nodded approvingly." },
     { label: "Packed", sub: "Brynley offered “help.” Tang said no. Brynley did it anyway." },
@@ -1100,7 +1099,7 @@
     return items[items.length - 1];
   };
 
-  // Minimal toast (uses your global toast if present)
+  // Minimal toast 
   const toast = (msg) => {
     if (typeof window.toast === "function") return window.toast(msg);
     const el = document.createElement("div");
