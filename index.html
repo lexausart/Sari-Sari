@@ -84,83 +84,12 @@ Our catalog is still being updated. Feel free to click on all the buttons.
       </p>
       <div class="hero__cta">
         <a class="btn btn--primary" id="notSuspiciousBtn" href="#">Shop “Not Suspicious” Deals</a>
-        <a class="btn btn--ghost" id="trackOrderBtn" href="#">Track an Order (why)</a>
       </div>
       <p class="hero__fineprint">*Primal shipping: arrives between “soon” and “after the next sidequest.”</p>
     </div>
   </section>
 
   <main class="layout" role="main">
-    <!-- Mobile: drawer. Desktop: sidebar. -->
-    <details class="filtersShell" aria-label="Filters">
-      <summary class="filtersShell__summary btn btn--ghost">🔧 Filters</summary>
-
-      <aside class="filters" aria-label="Filter options">
-        <h2 class="filters__title">Refine by</h2>
-
-        <section class="filter">
-          <h3 class="filter__heading">Department</h3>
-          <label class="check"><input type="checkbox" data-filter="dept" value="snacks" /> Snacks</label>
-          <label class="check"><input type="checkbox" data-filter="dept" value="drinks" /> Drinks</label>
-          <label class="check"><input type="checkbox" data-filter="dept" value="household" /> Household</label>
-          <label class="check"><input type="checkbox" data-filter="dept" value="trinkets" /> Charms & Trinkets</label>
-          <label class="check"><input type="checkbox" data-filter="dept" value="notcursed" /> “Not Cursed”</label>
-        </section>
-
-        <section class="filter">
-          <h3 class="filter__heading">Delivery</h3>
-          <label class="check"><input type="checkbox" data-filter="flag" value="primal" /> Primal eligible</label>
-          <label class="check"><input type="checkbox" data-filter="flag" value="sameday" /> Same-day (if Euclid
-            runs)</label>
-        </section>
-
-        <section class="filter">
-          <h3 class="filter__heading">Rating</h3>
-          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="4" /> 4★ & up</label>
-          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="3" /> 3★ & up</label>
-          <label class="radio"><input type="radio" name="ratingMin" data-filter="ratingMin" value="0" checked />
-            Any</label>
-        </section>
-
-        <section class="filter">
-          <h3 class="filter__heading">Price</h3>
-          <div class="price">
-            <input class="price__input" id="minPrice" placeholder="₱ min" inputmode="numeric" />
-            <span>—</span>
-            <input class="price__input" id="maxPrice" placeholder="₱ max" inputmode="numeric" />
-          </div>
-          <button class="btn btn--small" type="button" id="applyPrice">Apply</button>
-          <button class="btn btn--small btn--ghost" type="button" id="clearFilters">Clear</button>
-        </section>
-
-        <section class="filter">
-          <h3 class="filter__heading">Special</h3>
-          <label class="check"><input type="checkbox" data-filter="flag" value="blessing" /> Blessing included</label>
-          <label class="check"><input type="checkbox" data-filter="flag" value="r-tehz" /> R'tehz-tested</label>
-          <label class="check"><input type="checkbox" data-filter="flag" value="tito" /> Tito-approved (danger)</label>
-        </section>
-
-        <p class="filters__hint">Tip: “Primal” increases plot by 23%.</p>
-      </aside>
-    </details>
-
-    <section class="results" aria-label="Results">
-      <div class="results__bar">
-        <div class="results__count" aria-live="polite">
-          <strong id="countShown">0</strong> results for <em id="queryLabel">“”</em>
-        </div>
-
-        <div class="sort">
-          <label class="sr-only" for="sort">Sort</label>
-          <select id="sort">
-            <option value="featured">Sort by: Featured</option>
-            <option value="priceAsc">Price: Low to High</option>
-            <option value="priceDesc">Price: High to Low</option>
-            <option value="ratingDesc">Avg. Customer Chaos</option>
-            <option value="newest">Newest Arrivals</option>
-          </select>
-        </div>
-      </div>
 
       <div class="grid" aria-label="Product grid">
 
@@ -720,6 +649,30 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>5000</div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">"Do you have those wind up toys that you pull the crank on and they helicopter around and then they hit your best friend in the eye and then you're never allowed to have them again..."</p>
+        </article>
+
+        <!-- Espasol -->
+                  <article class="card" data-dept="snacks" data-tags="espasol" data-flags="blessing"
+          data-price="100" data-rating="4" data-reviews="123" data-date="2026-09-19">
+          <div class="card__img" aria-hidden="true">🍡</div>
+          <h3 class="card__title">Espasol</h3>
+          <p class="card__meta">Ships from: our kitchen • A chewy delicacy!</p>
+          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(123)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Bisaya Island rice cake made of rice flour, coconut milk, sugar, and toasted coconut.</p>
+        </article>
+
+                <!-- Bibingka -->
+                  <article class="card" data-dept="snacks" data-tags="Bibingka" data-flags="blessing"
+          data-price="160" data-rating="4" data-reviews="74" data-date="2026-09-19">
+          <div class="card__img" aria-hidden="true">🍰</div>
+          <h3 class="card__title">Bibingka</h3>
+          <p class="card__meta">Ships from: Sunny's secret stash • A chewy delicacy!</p>
+          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(74)</span></div>
+          <div class="card__price"><span class="currency">₱</span>160</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">A fluffy, lightly sweetened rice cake from Bisaya Island.</p>
         </article>
         
 
