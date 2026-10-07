@@ -35,20 +35,6 @@
                 <strong>Coeurl</strong> Goblet Ward 22 Plot 25
             </div>
 
-            <form class="search" role="search" aria-label="Product search">
-                <label class="sr-only" for="q">Search Tangazon</label>
-                <select class="search__select" aria-label="Department">
-                    <option>All</option>
-                    <option>Snacks</option>
-                    <option>Drinks</option>
-                    <option>Household</option>
-                    <option>Gacha & Trinkets</option>
-                    <option>“Not Cursed”</option>
-                </select>
-                <input id="q" class="search__input" placeholder="Search: chicharron, calamansi, aether batteries…" />
-                <button class="search__btn" type="submit" aria-label="Search">🔎</button>
-            </form>
-
       <nav class="account" aria-label="Account links">
         <a class="account__item" href="https://discord.gg/4T2kTz2ckp">
           <span class="small">Hello, traveler</span>
@@ -91,7 +77,12 @@ Our catalog is still being updated. Feel free to click on all the buttons.
 
   <main class="layout" role="main">
 
-      <div class="grid" aria-label="Product grid">
+
+    <!-- Snacks -->
+
+    <h2>Snacks</h2>
+
+     <div class="grid" aria-label="Product grid">
 
         <!-- Fried Chicken -->
         <article class="card" data-dept="snacks" data-tags="fried chicken" data-flags="sameday tito"
@@ -115,90 +106,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>79 <span class="card__prime">Primal</span></div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">Pork rinds. Warning: may attract friendly spirits.</p>
-        </article>
-
-        <!-- Peter's Chocobo Head -->
-        <article class="card" data-dept="trinkets" data-tags="Peter's Chocobo Head" data-flags=""
-          data-price="5000" data-rating="5" data-reviews="5" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/5GTCcpO.gif"></div>
-          <h3 class="card__title">Peter's Chocobo Head</h3>
-          <p class="card__meta">Ships from: Tural • “You all matter!”</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(5)</span></div>
-          <div class="card__price"><span class="currency">₱</span>5000</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Might be a parasite.</p>
-        </article>
-
-        <!-- Calamansi Concentrate -->
-        <article class="card" data-dept="drinks" data-tags="calamansi citrus sour concentrate drink" data-flags="tito"
-          data-price="55" data-rating="5.0" data-reviews="803" data-date="2026-02-14">
-          <div class="card__img" aria-hidden="true">🍋</div>
-          <h3 class="card__title">Calamansi Concentrate</h3>
-          <p class="card__meta">Ships from: Sunny’s stash • “for health”</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(803)</span></div>
-          <div class="card__price"><span class="currency">₱</span>55</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Calamansi is a citrus from Bisaya Island. Sour enough to reset your life choices.</p>
-        </article>
-
-        <!-- Tito Whiskey juice -->
-        <article class="card" data-dept="drinks" data-tags="tito whiskey juice bottle questionable wisdom"
-          data-flags="tito" data-price="120" data-rating="3.0" data-reviews="666" data-date="2026-01-30">
-          <div class="card__img" aria-hidden="true">🧃</div>
-          <h3 class="card__title">Tito Whiskey’s “Juice”</h3>
-          <p class="card__meta">Ships from: Definitely not Tito • trust?</p>
-          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(666)</span></div>
-          <div class="card__price"><span class="currency">₱</span>120</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">May contain wisdom. May contain lies.</p>
-        </article>
-
-        <!-- Aether batteries -->
-        <article class="card" data-dept="household" data-tags="aether batteries euclid engineering power"
-          data-flags="primal r-tehz" data-price="349" data-rating="4.0" data-reviews="1112" data-date="2026-02-01">
-          <div class="card__img" aria-hidden="true">🔋</div>
-          <h3 class="card__title">Aether Batteries (Euclid Edition)</h3>
-          <p class="card__meta">Ships from: Workshop • “I calibrated them.”</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(1,112)</span></div>
-          <div class="card__price"><span class="currency">₱</span>349 <span class="card__prime">Primal</span></div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">If it hums, that’s normal. Probably.</p>
-        </article>
-
-        <!-- Anti-Aswang Soap -->
-        <article class="card" data-dept="household" data-tags="soap anti aswang protection hygiene"
-          data-flags="blessing" data-price="38" data-rating="4.0" data-reviews="512" data-date="2026-01-22">
-          <div class="card__img" aria-hidden="true">🧼</div>
-          <h3 class="card__title">Bar Soap (Anti-Aswang Scent)</h3>
-          <p class="card__meta">Ships from: Xuanzang Star • stolen fair & square</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(512)</span></div>
-          <div class="card__price"><span class="currency">₱</span>38</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Smells like safety and mild intimidation.</p>
-        </article>
-
-        <!-- Gremlin Plush -->
-        <article class="card" data-dept="trinkets" data-tags="plush gremlin gift" data-flags="sameday"
-          data-price="499" data-rating="5.0" data-reviews="9001" data-date="2026-02-15">
-          <div class="card__img" aria-hidden="true">🧸</div>
-          <h3 class="card__title">Gremlin Plush (Set of 2)</h3>
-          <p class="card__meta">Ships from: Brynley • “I packed it!”</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(9,001)</span></div>
-          <div class="card__price"><span class="currency">₱</span>499</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Some assembly required (emotional).</p>
-        </article>
-
-        <!-- Kiba's Toilet Plunger -->
-        <article class="card" data-dept="household" data-tags="Kiba's Toilet Plunger" data-flags=""
-          data-price="1200" data-rating="4" data-reviews="253" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/KWLcAq4.gif"></div>
-          <h3 class="card__title">Kiba's Toilet Plunger</h3>
-          <p class="card__meta">Ships from: Kiba's bathroom • NOT stolen</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(253)</span></div>
-          <div class="card__price"><span class="currency">₱</span>1200</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">We <em>definitely</em> acquired Kiba's consent to sell this (really).</p>
         </article>
 
          <!-- Balut -->
@@ -237,17 +144,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">This sushi is squishy!</p>
         </article>
 
-        <!-- Ironworks Weapon Model Kit -->
-         <article class="card" data-dept="trinkets" data-tags="Ironworks Weapon Model Kit" data-flags="r-tehz"
-          data-price="9999999" data-rating="5" data-reviews="325" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true">🤖</div>
-          <h3 class="card__title">Ironworks Weapon Model Kit</h3>
-          <p class="card__meta">Ships from: R'tehz's closet • factory-sealed</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(325)</span></div>
-          <div class="card__price"><span class="currency">₱</span>9999999</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">You finished your last kits, right?</p>
-        </article>
 
         <!-- Frozen Pizza -->
         <article class="card" data-dept="snacks" data-tags="frozen pizza" data-flags=""
@@ -259,42 +155,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>15</div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">Did you try heating it up?</p>
-        </article>
-
-        <!-- Height Adjustable Lalafell Booster Seat-->
-         <article class="card" data-dept="household" data-tags="Height Adjustable Lalafell Booster Seat" data-flags=""
-          data-price="5124" data-rating="4" data-reviews="4353" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true">🪑</div>
-          <h3 class="card__title">Height Adjustable Lalafell Booster Seat</h3>
-          <p class="card__meta">Ships from: our warehouse • “How's the weather up there?”</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(4,353)</span></div>
-          <div class="card__price"><span class="currency">₱</span>5124</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Guaranteed to help you reach the top shelf.</p>
-        </article>
-
-           <!-- Red Auroch Energy Drink -->
-        <article class="card" data-dept="drinks" data-tags="energy drink" data-flags="blessing primal sameday"
-          data-price="3" data-rating="4" data-reviews="239" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/zG2GOCO.gif"></div>
-          <h3 class="card__title">Red Auroch Energy Drink</h3>
-          <p class="card__meta">Ships from: the void • “Gives you wings!”</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(239)</span></div>
-          <div class="card__price"><span class="currency">₱</span>3 <span class="card__prime">Primal</span></div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Guaranteed to keep you awake.</p>
-        </article>
-
-        <!-- Malboro Cigarettes -->
-                 <article class="card" data-dept="trinkets" data-tags="cigarettes" data-flags="sameday"
-          data-price="50" data-rating="2" data-reviews="346" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/rCz9HGr.gif"></div>
-          <h3 class="card__title">Malboro Cigarettes</h3>
-          <p class="card__meta">Ships from: our front yard garden • stinky</p>
-          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(346)</span></div>
-          <div class="card__price"><span class="currency">₱</span>50</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Please use in moderation.</p>
         </article>
 
         <!-- Steve's Protein Powder -->
@@ -309,7 +169,7 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">Builds muscle. Adds character.</p>
         </article>
 
-        <!-- Gum -->
+                        <!-- Gum -->
         <article class="card" data-dept="snacks" data-tags="gum" data-flags=""
           data-price="5" data-rating="3" data-reviews="63" data-date="2025-02-19">
           <div class="card__img" aria-hidden="true">🦷</div>
@@ -319,54 +179,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>5</div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">Cleans another dirty mouth.</p>
-        </article>
-
-        <!-- Rolanberry Slurpee -->
-         <article class="card" data-dept="drinks" data-tags="Cherry Slurpee" data-flags=""
-          data-price="100" data-rating="5" data-reviews="21" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/JyjTXrV.gif"></div>
-          <h3 class="card__title">Rolanberry Slurpee</h3>
-          <p class="card__meta">Ships from: slurpee machine • don't drink too fast</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(21)</span></div>
-          <div class="card__price"><span class="currency">₱</span>100</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Beware: your teeth will turn red</p>
-        </article>
-
-        <!-- Blue Raspbery Slurpee -->
-         <article class="card" data-dept="drinks" data-tags="blue raspberry Slurpee" data-flags=""
-          data-price="100" data-rating="5" data-reviews="253" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/5qoT5ZR.gif"></div>
-          <h3 class="card__title">Blue Raspberry Slurpee</h3>
-          <p class="card__meta">Ships from: slurpee machine • raspberries are blue?</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(253)</span></div>
-          <div class="card__price"><span class="currency">₱</span>100</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Beware: your teeth will turn blue</p>
-        </article>
-
-         <!-- Ube Slurpee -->
-         <article class="card" data-dept="drinks" data-tags="ube Slurpee" data-flags="blessing"
-          data-price="100" data-rating="5" data-reviews="152" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/IHq7O85.gif"></div>
-          <h3 class="card__title">Ube Slurpee</h3>
-          <p class="card__meta">Ships from: slurpee machine • add whipped cream on top</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(152)</span></div>
-          <div class="card__price"><span class="currency">₱</span>100</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">In true Bisaya Island fashion, we add ube to everything.</p>
-        </article>
-
-        <!-- Mana-enhancing Pills -->
-         <article class="card" data-dept="household" data-tags="mana-enhancing pills" data-flags=""
-          data-price="125" data-rating="2" data-reviews="252" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true">💊</div>
-          <h3 class="card__title">Mana-enhancing Pills</h3>
-          <p class="card__meta">Ships from: behind the counter • feel large and in charge</p>
-          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(252)</span></div>
-          <div class="card__price"><span class="currency">₱</span>125</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Boost your mechanics and rotations.</p>
         </article>
 
         <!-- Lumpia -->
@@ -393,18 +205,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">Feel free to suggest flavors, including wine flavored!</p>
         </article>
 
-         <!-- Soda -->  
-         <article class="card" data-dept="drinks" data-tags="soda" data-flags="sameday"
-          data-price="25" data-rating="4" data-reviews="534" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/z00xCd6.gif"></div>
-          <h3 class="card__title">Soda</h3>
-          <p class="card__meta">Ships from: the fridge • above the rest!</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(534)</span></div>
-          <div class="card__price"><span class="currency">₱</span>25</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Warning: may attract polar bears</p>
-        </article>
-
         <!-- Sleep-aid Gummies -->  
          <article class="card" data-dept="household" data-tags="sleep-aid gummies" data-flags=""
           data-price="350" data-rating="3" data-reviews="32" data-date="2025-02-19">
@@ -427,31 +227,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>125</div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">Use our free sample toothbrushes to prevent cavities!</p>
-        </article>
-
-         <!-- Waterga Vape Cartridge -->  
-         <article class="card" data-dept="trinkets" data-tags="Waterga Vape Cartridge" data-flags="sameday"
-          data-price="340" data-rating="2" data-reviews="574" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/TRAby2t.gif"></div>
-          <h3 class="card__title">Waterga Vape Cartridge</h3>
-          <p class="card__meta">Ships from: behind the counter • healthier than cigarettes(?)</p>
-          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(574)</span></div>
-          <div class="card__price"><span class="currency">₱</span>340</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">R'tehz approved. Excessively.</p>
-        </article>
-
-         <!-- Pre-paid Calling Enhancement Card -->  
-         <article class="card" data-dept="household" data-tags="Pre-paid Calling Enhancement Card" data-flags="sameday"
-          data-price="25" data-rating="1" data-reviews="1" data-date="2025-02-19">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/s7Vgl45.gif"></div>
-          <h3 class="card__title">Pre-paid Calling Enhancement Card</h3>
-          <p class="card__meta">Ships from: a spinning rack • communication is key</p>
-          <div class="card__rating" aria-label="Rating">★☆☆☆☆ <span>(1)</span></div>
-          <div class="card__price"><span class="currency">₱</span>25</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Forget dropped or fuzzy linkpearl calls with our <em>premium</em> calling card add-on plans! 
-            Enhances call quality per hour.</p>
         </article>
 
          <!-- Sharksfin Shomai -->  
@@ -529,7 +304,136 @@ Our catalog is still being updated. Feel free to click on all the buttons.
             Served with lettuce, tomatoes, and condiments on a roll.</p>
         </article>
 
-        <!-- Buko Juice -->
+
+         <!-- White Lopporit Candy -->
+         <article class="card" data-dept="snacks" data-tags="assorted candies" data-flags=""
+          data-price="50" data-rating="4" data-reviews="523" data-date="2026-02-28">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/u8finBN.gif"></div>
+          <h3 class="card__title">White Lopporit Candy</h3>
+          <p class="card__meta">Ships from: in front of the register • Tzae approved!</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(523)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">"Seven White Lopporit candies is equivalent to one cup of milk."</p>
+        </article>
+
+        <!-- Espasol -->
+                  <article class="card" data-dept="snacks" data-tags="espasol" data-flags="blessing"
+          data-price="100" data-rating="4" data-reviews="123" data-date="2026-09-19">
+          <div class="card__img" aria-hidden="true">🍡</div>
+          <h3 class="card__title">Espasol</h3>
+          <p class="card__meta">Ships from: our kitchen • A chewy delicacy!</p>
+          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(123)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Bisaya Island rice cake made of rice flour, coconut milk, sugar, and toasted coconut.</p>
+        </article>
+
+                <!-- Bibingka -->
+                  <article class="card" data-dept="snacks" data-tags="Bibingka" data-flags="blessing"
+          data-price="160" data-rating="4" data-reviews="74" data-date="2026-09-19">
+          <div class="card__img" aria-hidden="true">🍰</div>
+          <h3 class="card__title">Bibingka</h3>
+          <p class="card__meta">Ships from: Sunny's secret stash • Commonly associated with Starlight</p>
+          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(74)</span></div>
+          <div class="card__price"><span class="currency">₱</span>160</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">A fluffy, lightly sweetened rice cake from Bisaya Island.</p>
+        </article>
+
+        </div>
+
+        <!-- Drinks -->
+
+        <h2>Drinks</h2>
+
+      <div class="grid" aria-label="Product grid">
+
+        <!-- Calamansi Concentrate -->
+        <article class="card" data-dept="drinks" data-tags="calamansi citrus sour concentrate drink" data-flags="tito"
+          data-price="55" data-rating="5.0" data-reviews="803" data-date="2026-02-14">
+          <div class="card__img" aria-hidden="true">🍋</div>
+          <h3 class="card__title">Calamansi Concentrate</h3>
+          <p class="card__meta">Ships from: Sunny’s stash • “for health”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(803)</span></div>
+          <div class="card__price"><span class="currency">₱</span>55</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Calamansi is a citrus from Bisaya Island. Sour enough to reset your life choices.</p>
+        </article>
+
+        <!-- Tito Whiskey juice -->
+        <article class="card" data-dept="drinks" data-tags="tito whiskey juice bottle questionable wisdom"
+          data-flags="tito" data-price="120" data-rating="3.0" data-reviews="666" data-date="2026-01-30">
+          <div class="card__img" aria-hidden="true">🧃</div>
+          <h3 class="card__title">Tito Whiskey’s “Juice”</h3>
+          <p class="card__meta">Ships from: Definitely not Tito • trust?</p>
+          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(666)</span></div>
+          <div class="card__price"><span class="currency">₱</span>120</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">May contain wisdom. May contain lies.</p>
+        </article>
+
+                   <!-- Red Auroch Energy Drink -->
+        <article class="card" data-dept="drinks" data-tags="energy drink" data-flags="blessing primal sameday"
+          data-price="3" data-rating="4" data-reviews="239" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/zG2GOCO.gif"></div>
+          <h3 class="card__title">Red Auroch Energy Drink</h3>
+          <p class="card__meta">Ships from: the void • “Gives you wings!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(239)</span></div>
+          <div class="card__price"><span class="currency">₱</span>3 <span class="card__prime">Primal</span></div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Guaranteed to keep you awake.</p>
+        </article>
+
+<!-- Rolanberry Slurpee -->
+         <article class="card" data-dept="drinks" data-tags="Cherry Slurpee" data-flags=""
+          data-price="100" data-rating="5" data-reviews="21" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/JyjTXrV.gif"></div>
+          <h3 class="card__title">Rolanberry Slurpee</h3>
+          <p class="card__meta">Ships from: slurpee machine • don't drink too fast</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(21)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Beware: your teeth will turn red</p>
+        </article>
+
+        <!-- Blue Raspbery Slurpee -->
+         <article class="card" data-dept="drinks" data-tags="blue raspberry Slurpee" data-flags=""
+          data-price="100" data-rating="5" data-reviews="253" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/5qoT5ZR.gif"></div>
+          <h3 class="card__title">Blue Raspberry Slurpee</h3>
+          <p class="card__meta">Ships from: slurpee machine • raspberries are blue?</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(253)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Beware: your teeth will turn blue</p>
+        </article>
+
+         <!-- Ube Slurpee -->
+         <article class="card" data-dept="drinks" data-tags="ube Slurpee" data-flags="blessing"
+          data-price="100" data-rating="5" data-reviews="152" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/IHq7O85.gif"></div>
+          <h3 class="card__title">Ube Slurpee</h3>
+          <p class="card__meta">Ships from: slurpee machine • add whipped cream on top</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(152)</span></div>
+          <div class="card__price"><span class="currency">₱</span>100</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">In true Bisaya Island fashion, we add ube to everything.</p>
+        </article>
+
+                 <!-- Soda -->  
+         <article class="card" data-dept="drinks" data-tags="soda" data-flags="sameday"
+          data-price="25" data-rating="4" data-reviews="534" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/z00xCd6.gif"></div>
+          <h3 class="card__title">Soda</h3>
+          <p class="card__meta">Ships from: the fridge • above the rest!</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(534)</span></div>
+          <div class="card__price"><span class="currency">₱</span>25</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Warning: may attract polar bears</p>
+        </article>
+
+                <!-- Buko Juice -->
          <article class="card" data-dept="drinks" data-tags="Buko Juice" data-flags="tito"
           data-price="15" data-rating="4" data-reviews="2" data-date="2025-02-19">
           <div class="card__img" aria-hidden="true">🥥</div>
@@ -541,6 +445,123 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">Young green coconut juice. Served in the coconut itself or in a plastic bag with a straw.</p>
         </article>
 
+                 <!-- Mango Smoothie -->
+         <article class="card" data-dept="drinks" data-tags="Mango Smoothie" data-flags="tito blessing"
+          data-price="250" data-rating="5" data-reviews="8645" data-date="2026-02-25">
+          <div class="card__img" aria-hidden="true">🥭</div>
+          <h3 class="card__title">Mango Smoothie</h3>
+          <p class="card__meta">Ships from: our magitek blender • sends you to paradise</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(8,645)</span></div>
+          <div class="card__price"><span class="currency">₱</span>250</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Mango viscera blended with frostbitten water.</p>
+        </article>
+
+                 <!-- Red Chocobo Alcohol -->
+         <article class="card" data-dept="drinks" data-tags="Red Chocobo Alcohol" data-flags="tito blessed"
+          data-price="140" data-rating="4" data-reviews="895" data-date="2026-02-28">
+          <div class="card__img" aria-hidden="true">🥃</div>
+          <h3 class="card__title">Red Chocobo Alcohol</h3>
+          <p class="card__meta">Ships from: behind the counter • Extra Strong</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(895)</span></div>
+          <div class="card__price"><span class="currency">₱</span>140</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">A Bisaya Island special beer.</p>
+        </article>
+
+         <!-- Coffee -->
+         <article class="card" data-dept="drinks" data-tags="coffee" data-flags=""
+          data-price="50" data-rating="3" data-reviews="93" data-date="2026-02-28">
+          <div class="card__img" aria-hidden="true">☕</div>
+          <h3 class="card__title">Coffee</h3>
+          <p class="card__meta">Ships from: our magitek coffee machine • comes in different flavors</p>
+          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(93)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">No, this is not civet coffee.</p>
+        </article>
+
+        </div>
+
+         <!-- Household -->
+         
+        <h2>Household</h2>
+
+      <div class="grid" aria-label="Product grid">
+
+        <!-- Aether batteries -->
+        <article class="card" data-dept="household" data-tags="aether batteries euclid engineering power"
+          data-flags="primal r-tehz" data-price="349" data-rating="4.0" data-reviews="1112" data-date="2026-02-01">
+          <div class="card__img" aria-hidden="true">🔋</div>
+          <h3 class="card__title">Aether Batteries (Euclid Edition)</h3>
+          <p class="card__meta">Ships from: Workshop • “I calibrated them.”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(1,112)</span></div>
+          <div class="card__price"><span class="currency">₱</span>349 <span class="card__prime">Primal</span></div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">If it hums, that’s normal. Probably.</p>
+        </article>
+
+        <!-- Anti-Aswang Soap -->
+        <article class="card" data-dept="household" data-tags="soap anti aswang protection hygiene"
+          data-flags="blessing" data-price="38" data-rating="4.0" data-reviews="512" data-date="2026-01-22">
+          <div class="card__img" aria-hidden="true">🧼</div>
+          <h3 class="card__title">Bar Soap (Anti-Aswang Scent)</h3>
+          <p class="card__meta">Ships from: Xuanzang Star • stolen fair & square</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(512)</span></div>
+          <div class="card__price"><span class="currency">₱</span>38</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Smells like safety and mild intimidation.</p>
+        </article>
+
+        <!-- Kiba's Toilet Plunger -->
+        <article class="card" data-dept="household" data-tags="Kiba's Toilet Plunger" data-flags=""
+          data-price="1200" data-rating="4" data-reviews="253" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/KWLcAq4.gif"></div>
+          <h3 class="card__title">Kiba's Toilet Plunger</h3>
+          <p class="card__meta">Ships from: Kiba's bathroom • NOT stolen</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(253)</span></div>
+          <div class="card__price"><span class="currency">₱</span>1200</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">We <em>definitely</em> acquired Kiba's consent to sell this (really).</p>
+        </article>
+
+                <!-- Height Adjustable Lalafell Booster Seat-->
+         <article class="card" data-dept="household" data-tags="Height Adjustable Lalafell Booster Seat" data-flags=""
+          data-price="5124" data-rating="4" data-reviews="4353" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🪑</div>
+          <h3 class="card__title">Height Adjustable Lalafell Booster Seat</h3>
+          <p class="card__meta">Ships from: our warehouse • “How's the weather up there?”</p>
+          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(4,353)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5124</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Guaranteed to help you reach the top shelf.</p>
+        </article>
+
+                <!-- Mana-enhancing Pills -->
+         <article class="card" data-dept="household" data-tags="mana-enhancing pills" data-flags=""
+          data-price="125" data-rating="2" data-reviews="252" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">💊</div>
+          <h3 class="card__title">Mana-enhancing Pills</h3>
+          <p class="card__meta">Ships from: behind the counter • feel large and in charge</p>
+          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(252)</span></div>
+          <div class="card__price"><span class="currency">₱</span>125</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Boost your mechanics and rotations.</p>
+        </article>
+
+                 <!-- Pre-paid Calling Enhancement Card -->  
+         <article class="card" data-dept="household" data-tags="Pre-paid Calling Enhancement Card" data-flags="sameday"
+          data-price="25" data-rating="1" data-reviews="1" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/s7Vgl45.gif"></div>
+          <h3 class="card__title">Pre-paid Calling Enhancement Card</h3>
+          <p class="card__meta">Ships from: a spinning rack • communication is key</p>
+          <div class="card__rating" aria-label="Rating">★☆☆☆☆ <span>(1)</span></div>
+          <div class="card__price"><span class="currency">₱</span>25</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Forget dropped or fuzzy linkpearl calls with our <em>premium</em> calling card add-on plans! 
+            Enhances call quality per hour.</p>
+        </article>
+        
         <!-- Camouflage Mask -->
          <article class="card" data-dept="household" data-tags="Camouflage Mask" data-flags="tito"
           data-price="630" data-rating="2" data-reviews="96" data-date="2025-02-19">
@@ -551,18 +572,6 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <div class="card__price"><span class="currency">₱</span>630</div>
           <button class="btn btn--add" type="button">Add to Cart</button>
           <p class="card__note">A mask popular in Ul'dah even though there aren't many trees in Ul'dah...</p>
-        </article>
-
-         <!-- Mango Smoothie -->
-         <article class="card" data-dept="drinks" data-tags="Mango Smoothie" data-flags="tito blessing"
-          data-price="250" data-rating="5" data-reviews="8645" data-date="2026-02-25">
-          <div class="card__img" aria-hidden="true">🥭</div>
-          <h3 class="card__title">Mango Smoothie</h3>
-          <p class="card__meta">Ships from: our magitek blender • sends you to paradise</p>
-          <div class="card__rating" aria-label="Rating">★★★★★ <span>(8,645)</span></div>
-          <div class="card__price"><span class="currency">₱</span>250</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Mango viscera blended with frostbitten water.</p>
         </article>
 
          <!-- Dan's Hat -->
@@ -601,43 +610,75 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">Comes in walis tambo (dried tiger grass) or walis tingting (coconut palm midribs).</p>
         </article>
 
-         <!-- Assorted Candies -->
-         <article class="card" data-dept="snacks" data-tags="assorted candies" data-flags=""
-          data-price="50" data-rating="4" data-reviews="523" data-date="2026-02-28">
-          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/u8finBN.gif"></div>
-          <h3 class="card__title">White Lopporit Candy</h3>
-          <p class="card__meta">Ships from: in front of the register • Tzae approved!</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(523)</span></div>
-          <div class="card__price"><span class="currency">₱</span>5</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">"Seven White Lopporit candies is equivalent to one cup of milk."</p>
-        </article>
 
-         <!-- Red Chocobo Alcohol -->
-         <article class="card" data-dept="drinks" data-tags="Red Chocobo Alcohol" data-flags="tito blessed"
-          data-price="140" data-rating="4" data-reviews="895" data-date="2026-02-28">
-          <div class="card__img" aria-hidden="true">🥃</div>
-          <h3 class="card__title">Red Chocobo Alcohol</h3>
-          <p class="card__meta">Ships from: behind the counter • Extra Strong</p>
-          <div class="card__rating" aria-label="Rating">★★★★☆ <span>(895)</span></div>
-          <div class="card__price"><span class="currency">₱</span>140</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">A Bisaya Island special beer.</p>
-        </article>
+        </div>
 
-         <!-- Coffee -->
-         <article class="card" data-dept="drinks" data-tags="coffee" data-flags=""
-          data-price="50" data-rating="3" data-reviews="93" data-date="2026-02-28">
-          <div class="card__img" aria-hidden="true">☕</div>
-          <h3 class="card__title">Coffee</h3>
-          <p class="card__meta">Ships from: our magitek coffee machine • comes in different flavors</p>
-          <div class="card__rating" aria-label="Rating">★★★☆☆ <span>(93)</span></div>
-          <div class="card__price"><span class="currency">₱</span>5</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">No, this is not civet coffee.</p>
-        </article>
-
+         <!-- Trinkets -->
          
+        <h2>Trinkets</h2>
+
+      <div class="grid" aria-label="Product grid">
+
+            <!-- Peter's Chocobo Head -->
+        <article class="card" data-dept="trinkets" data-tags="Peter's Chocobo Head" data-flags=""
+          data-price="5000" data-rating="5" data-reviews="5" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/5GTCcpO.gif"></div>
+          <h3 class="card__title">Peter's Chocobo Head</h3>
+          <p class="card__meta">Ships from: Tural • “You all matter!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(5)</span></div>
+          <div class="card__price"><span class="currency">₱</span>5000</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Might be a parasite.</p>
+        </article>
+
+        <!-- Gremlin Plush -->
+        <article class="card" data-dept="trinkets" data-tags="plush gremlin gift" data-flags="sameday"
+          data-price="499" data-rating="5.0" data-reviews="9001" data-date="2026-02-15">
+          <div class="card__img" aria-hidden="true">🧸</div>
+          <h3 class="card__title">Gremlin Plush (Set of 2)</h3>
+          <p class="card__meta">Ships from: Brynley • “I packed it!”</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(9,001)</span></div>
+          <div class="card__price"><span class="currency">₱</span>499</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Some assembly required (emotional).</p>
+        </article>
+
+                <!-- Ironworks Weapon Model Kit -->
+         <article class="card" data-dept="trinkets" data-tags="Ironworks Weapon Model Kit" data-flags="r-tehz"
+          data-price="9999999" data-rating="5" data-reviews="325" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true">🤖</div>
+          <h3 class="card__title">Ironworks Weapon Model Kit</h3>
+          <p class="card__meta">Ships from: R'tehz's closet • factory-sealed</p>
+          <div class="card__rating" aria-label="Rating">★★★★★ <span>(325)</span></div>
+          <div class="card__price"><span class="currency">₱</span>9999999</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">You finished your last kits, right?</p>
+        </article>
+
+                <!-- Malboro Cigarettes -->
+                 <article class="card" data-dept="trinkets" data-tags="cigarettes" data-flags="sameday"
+          data-price="50" data-rating="2" data-reviews="346" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/rCz9HGr.gif"></div>
+          <h3 class="card__title">Malboro Cigarettes</h3>
+          <p class="card__meta">Ships from: our front yard garden • stinky</p>
+          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(346)</span></div>
+          <div class="card__price"><span class="currency">₱</span>50</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">Please use in moderation.</p>
+        </article>
+
+         <!-- Waterga Vape Cartridge -->  
+         <article class="card" data-dept="trinkets" data-tags="Waterga Vape Cartridge" data-flags="sameday"
+          data-price="340" data-rating="2" data-reviews="574" data-date="2025-02-19">
+          <div class="card__img" aria-hidden="true"><img class="card__img" src="https://imgur.com/TRAby2t.gif"></div>
+          <h3 class="card__title">Waterga Vape Cartridge</h3>
+          <p class="card__meta">Ships from: behind the counter • healthier than cigarettes(?)</p>
+          <div class="card__rating" aria-label="Rating">★★☆☆☆ <span>(574)</span></div>
+          <div class="card__price"><span class="currency">₱</span>340</div>
+          <button class="btn btn--add" type="button">Add to Cart</button>
+          <p class="card__note">R'tehz approved. Excessively.</p>
+        </article>
+
         <!-- Bahamut-blade -->     
           
          <article class="card" data-dept="trinkets" data-tags="Bahamut-blade" data-flags=""
@@ -651,31 +692,7 @@ Our catalog is still being updated. Feel free to click on all the buttons.
           <p class="card__note">"Do you have those wind up toys that you pull the crank on and they helicopter around and then they hit your best friend in the eye and then you're never allowed to have them again..."</p>
         </article>
 
-        <!-- Espasol -->
-                  <article class="card" data-dept="snacks" data-tags="espasol" data-flags="blessing"
-          data-price="100" data-rating="4" data-reviews="123" data-date="2026-09-19">
-          <div class="card__img" aria-hidden="true">🍡</div>
-          <h3 class="card__title">Espasol</h3>
-          <p class="card__meta">Ships from: our kitchen • A chewy delicacy!</p>
-          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(123)</span></div>
-          <div class="card__price"><span class="currency">₱</span>100</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">Bisaya Island rice cake made of rice flour, coconut milk, sugar, and toasted coconut.</p>
-        </article>
-
-                <!-- Bibingka -->
-                  <article class="card" data-dept="snacks" data-tags="Bibingka" data-flags="blessing"
-          data-price="160" data-rating="4" data-reviews="74" data-date="2026-09-19">
-          <div class="card__img" aria-hidden="true">🍰</div>
-          <h3 class="card__title">Bibingka</h3>
-          <p class="card__meta">Ships from: Sunny's secret stash • Commonly associated with Starlight</p>
-          <div class="card__rating" aria-label="Rating">★★★★★☆ <span>(74)</span></div>
-          <div class="card__price"><span class="currency">₱</span>160</div>
-          <button class="btn btn--add" type="button">Add to Cart</button>
-          <p class="card__note">A fluffy, lightly sweetened rice cake from Bisaya Island.</p>
-        </article>
-        
-
+        </div>
 
          <!-- BLANK        
           
