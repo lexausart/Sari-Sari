@@ -707,3 +707,192 @@
   });
 })();
 
+
+  // Minimal toast 
+  const toast = (msg) => {
+    if (typeof window.toast === "function") return window.toast(msg);
+    const el = document.createElement("div");
+    el.textContent = msg;
+    el.style.position = "fixed";
+    el.style.left = "50%";
+    el.style.bottom = "18px";
+    el.style.transform = "translate(-50%, 12px)";
+    el.style.opacity = "0";
+    el.style.pointerEvents = "none";
+    el.style.background = "rgba(17,24,39,.92)";
+    el.style.color = "#fff";
+    el.style.padding = "10px 12px";
+    el.style.borderRadius = "999px";
+    el.style.boxShadow = "0 10px 28px rgba(0,0,0,.22)";
+    el.style.font = "800 13px/1.1 system-ui";
+    el.style.zIndex = "9999";
+    el.style.maxWidth = "calc(100vw - 24px)";
+    el.style.whiteSpace = "nowrap";
+    el.style.overflow = "hidden";
+    el.style.textOverflow = "ellipsis";
+    el.style.transition = "opacity .18s ease, transform .18s ease";
+    document.body.appendChild(el);
+    requestAnimationFrame(() => { el.style.opacity = "1"; el.style.transform = "translate(-50%, 0)"; });
+    setTimeout(() => {
+      el.style.opacity = "0";
+      el.style.transform = "translate(-50%, 12px)";
+      setTimeout(() => el.remove(), 200);
+    }, 1200);
+  };
+
+  let lastFocus = null;
+  let current = null;
+  let orderId = makeOrderId();
+
+  const buildSteps = (nowIdx) => {
+    stepsEl.innerHTML = "";
+    stepTemplates.forEach((s, i) => {
+      const el = document.createElement("div");
+      el.className = "trackStep";
+      if (i < nowIdx) el.classList.add("is-done");
+      if (i === nowIdx) el.classList.add("is-now");
+      el.innerHTML = `
+        <div class="trackStep__dot" aria-hidden="true"></div>
+        <div>
+          <p class="trackStep__label">${s.label}</p>
+          <p class="trackStep__sub">${s.sub}</p>
+        </div>
+      `;
+      stepsEl.appendChild(el);
+    });
+  };
+
+  const render = (scenario) => {
+    current = scenario;
+
+    // Vary "current step" per scenario, with some drama
+    let nowIdx = randInt(1, 4);
+    if (scenario.title.includes("Delivered")) nowIdx = 5;
+    if (scenario.title.includes("Legendary")) nowIdx = randInt(2, 4);
+    if (scenario.title.includes("Brynley")) nowIdx = randInt(1, 3);
+    if (scenario.title.includes("Time Dilation")) nowIdx = randInt(0, 2);
+
+    titleEl.textContent = scenario.title;
+    badgeEl.textContent = scenario.badge;
+    statusEl.textContent = scenario.status;
+    orderIdEl.textContent = orderId;
+    metaEl.innerHTML = `Order ID: <strong>${orderId}</strong>`;
+
+    buildSteps(nowIdx);
+
+    detailEl.textContent = scenario.detail;
+    fineEl.textContent = scenario.fine || "";
+
+    actionsEl.innerHTML = "";
+    scenario.actions.forEach((a) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = a.kind === "primary" ? "btn btn--primary" : "btn btn--ghost";
+      b.textContent = a.label;
+      b.addEventListener("click", () => handleAction(a.action));
+      actionsEl.appendChild(b);
+    });
+  };
+
+  const open = () => {
+    lastFocus = document.activeElement;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("drawer-open"); // scroll lock (reused)
+
+    // Keep same orderId for the session until you close modal; feels consistent
+    render(pickWeighted(scenarios));
+
+    const firstBtn = actionsEl.querySelector("button");
+    firstBtn && firstBtn.focus();
+  };
+
+  const close = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("drawer-open");
+    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  };
+
+  const handleAction = (action) => {
+    if (action === "close") return close();
+
+    if (action === "refresh") {
+      toast("Refreshing tracking… (respectfully).");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "euclidStop") {
+      toast("Euclid acknowledged your request and began optimizing how to stop optimizing.");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "bribe") {
+      toast("Bribe accepted. A sticker has been added to your box.");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "interrupt") {
+      toast("You interrupted Tito. He is now louder.");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "encourage") {
+      toast("You encouraged the package. It feels seen.");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "innocence") {
+      toast("Innocence asserted. Suspicion reduced by 1% (symbolically).");
+      render(pickWeighted(scenarios));
+      return;
+    }
+
+    if (action === "complain") {
+      toast("Complaint logged. The universe shrugged.");
+      render(pickWeighted(scenarios));
+      return;
+    }
+  };
+
+  // Intercept click to open modal
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    orderId = makeOrderId(); // new session each open
+    open();
+  });
+
+  // Close on overlay/close button
+  closeEls.forEach((el) => el.addEventListener("click", close));
+
+  // ESC to close
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) close();
+  });
+
+  // Focus trap
+  document.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("is-open")) return;
+    if (e.key !== "Tab") return;
+
+    const focusables = modal.querySelectorAll('button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+    if (!focusables.length) return;
+
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+})();
+
